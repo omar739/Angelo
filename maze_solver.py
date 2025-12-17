@@ -5,7 +5,7 @@ import base64
 def get_base64(file_path):
     with open(file_path, "rb") as f:
         return base64.b64encode(f.read()).decode()
-bg_image = get_base64("C:/Users/Mega Store/Downloads/winter.jpg")
+bg_image = get_base64("winter.jpg")
 
 page_bg = f"""
 <style>
@@ -47,3 +47,4 @@ st.markdown("""
 
 <h2><span class="highlight">Upload your video below to see results</span></h2>
 """, unsafe_allow_html=True)
+
