@@ -57,7 +57,5 @@ video_file = st.file_uploader(
 if video_file is not None:
     st.video(video_file)
 
-<h2><span class="highlight">Upload your video below to see results</span></h2>
-""", unsafe_allow_html=True)
 
 
